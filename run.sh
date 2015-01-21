@@ -2,6 +2,11 @@
 
 set -e
 
-envtpl /etc/collectd/collectd.conf.tpl
+if [ ! -e "/.initialized" ]; then
+    touch "/.initialized"
+    envtpl /etc/collectd/collectd.conf.tpl
+fi
+
+
 
 collectd -f
