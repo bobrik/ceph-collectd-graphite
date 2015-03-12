@@ -1,4 +1,4 @@
-FROM ceph/base
+FROM ceph/base:giant
 
 RUN apt-get update && \
     apt-get --no-install-recommends -y install collectd libpython2.7 python-pip git-core && \
