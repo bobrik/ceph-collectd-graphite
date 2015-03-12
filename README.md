@@ -24,6 +24,8 @@ Environment variables:
 
 Note that you must pass `/etc/ceph` into container to collect metrics.
 
+This image builds from `ceph/base` and has the same tags.
+
 Check out [collectd-ceph](https://github.com/rochaporto/collectd-ceph)
 for more info and awesome grafana dasboard:
 
